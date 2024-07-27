@@ -1,0 +1,41 @@
+id_pedido;id_proveedor;id_usuario;id_estado_item;detalle;costo_unitario
+1;53;2;5;Mochila;7.4
+1;48;8;2;Bordado;8.3
+2;294;2;6;Mate;4.2
+3;246;12;5;Termo;7.7
+3;22;1;3;Xerigrafia;2.1
+3;203;15;2;Gorro;4.2
+3;202;12;2;Bordado;1.7
+4;30;9;2;Mochila;10.8
+4;379;2;6;Bordado;5.6
+5;423;15;5;Botella Termica;8.2
+5;353;4;1;Impresión UV;4.1
+5;425;13;5;Birome;3.8
+5;11;7;2;Tampografia;1.3
+6;38;11;2;Conservadora;12.4
+6;239;5;5;Aplicación de Logo;3.2
+7;214;5;4;Cuadernos;11.7
+8;388;13;6;Anotador;3.2
+8;15;7;6;Taza;5.3
+8;407;9;3;Grabado Laser;4.8
+8;298;15;2;Birome;3.3
+9;192;9;6;Paraguas;6.1
+9;442;14;2;Impresión;2.0
+10;147;3;3;Jarro Titan;12.0
+10;226;5;5;Grabado Laser;2.2
+11;163;12;2;Termo Pro;15.3
+11;225;10;3;Impresión UV;3.2
+12;371;10;4;Cuadernos;4.3
+13;41;5;1;Birome;0.8
+14;349;15;2;Llavero racing;5.2
+14;126;12;4;Grabado Laser;3.1
+15;336;14;3;Mouse Pad Samba;1.8
+15;462;9;2;Apoya muñecas Jazz;0.9
+16;149;13;5;Tarjetero;2.5
+16;74;3;5;Impresión;0.3
+17;186;2;2;Polar sin mangas;6.5
+17;13;12;6;Bordado Chico 1 color;2.1
+17;147;3;4;Lanyard Aro Sinfín y mosqueton;4.2
+17;384;8;5;Impresión a 1 color;0.9
+18;291;3;3;Multiherramienta Ideal;7.1
+18;69;12;4;Grabado Laser;0.5

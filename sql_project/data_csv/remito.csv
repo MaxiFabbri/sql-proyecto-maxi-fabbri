@@ -1,0 +1,16 @@
+id_pedido;id_usuario;numero_remito;fecha;transporte;detalle
+1;8;R00001-00000001;2024-07-05;Moto Marcos;In hac habitasse platea dictumst.
+1;5;R00001-00000002;2024-07-06;Flete Mauro;In congue.
+1;15;R00001-00000003;2024-07-06;Flete Juan;Nunc nisl.
+2;10;R00001-00000004;2024-07-07;Moto Marcos;Maecenas tincidunt lacus at velit.
+2;14;R00001-00000005;2024-07-07;Flete Juan;Sed sagittis.
+3;15;R00001-00000006;2024-07-07;Flete Juan;Nam dui.
+4;8;R00001-00000007;2024-07-08;Moto Marcos;Praesent blandit.
+5;7;R00001-00000008;2024-07-08;Moto Marcos;Suspendisse potenti.
+5;2;R00001-00000009;2024-07-10;Flete Mauro;Fusce consequat.
+5;10;R00001-00000010;2024-07-10;Flete Juan;Integer ac neque.
+5;5;R00001-00000011;2024-07-10;Flete Juan;In congue.
+5;3;R00001-00000012;2024-07-12;Flete Juan;Fusce consequat.
+6;10;R00001-00000013;2024-07-12;Moto Marcos;Maecenas tincidunt lacus at velit.
+7;9;R00001-00000014;2024-07-13;Flete Juan;Nullam varius.
+8;10;R00001-00000015;2024-07-14;Flete Juan;Ut tellus.

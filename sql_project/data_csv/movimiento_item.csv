@@ -1,0 +1,25 @@
+id_item;id_usuario;descripcion;id_estado_item
+1;1;Pellentesque at nulla.;1
+1;9;Duis bibendum.;3
+1;4;Nunc nisl.;6
+2;10;In congue.;3
+2;7;Fusce consequat.;4
+2;9;Maecenas tincidunt lacus at velit.;5
+3;4;Nullam varius.;6
+4;2;Nunc nisl.;4
+5;9;Duis at velit eu est congue elementum.;3
+5;1;Maecenas pulvinar lobortis est.;4
+6;6;Nulla nisl.;1
+6;14;Anulado;2
+7;8;Nunc purus.;1
+7;13;Ut tellus.;3
+7;4;Sed sagittis.;6
+8;9;Suspendisse potenti.;5
+9;12;In hac habitasse platea dictumst.;4
+10;7;Proin risus.;5
+11;12;Phasellus in felis.;6
+11;10;Quisque ut erat.;3
+12;14;Sed ante.;1
+12;4;Fusce consequat.;4
+13;3;Proin risus.;3
+14;3;Donec ut dolor.;6
