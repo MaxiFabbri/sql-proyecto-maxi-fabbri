@@ -15,7 +15,7 @@ BEGIN
 	UPDATE merchanmanager.pedido 
     SET id_estado_pedido = NEW.id_estado_pedido 
     WHERE id_pedido = NEW.id_pedido; 
-END; //
+END //
 DELIMITER ;
 
 -- TRIGGER CUANDO SE INSERTA UN MOVIMIENTO EN LA TABLA movimiento_item
@@ -34,5 +34,5 @@ BEGIN
 	UPDATE merchanmanager.item 
     SET id_estado_item = NEW.id_estado_item 
     WHERE id_item = NEW.id_item; 
-END; //
+END //
 DELIMITER ;

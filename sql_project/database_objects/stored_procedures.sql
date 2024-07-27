@@ -1,3 +1,5 @@
+USE merchanmanager;
+
 DROP PROCEDURE IF EXISTS merchanmanager.consulta_pedido_por_estado;
 
 DELIMITER //
@@ -29,7 +31,7 @@ BEGIN
     PREPARE runSQL FROM @clausula;
     EXECUTE runSQL;
     DEALLOCATE PREPARE runSQL;
-END; //
+END //
 
 DELIMITER ;
 
