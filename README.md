@@ -1,10 +1,10 @@
-Alumno: Maximiliano Fabbri
+## Alumno: Maximiliano Fabbri
 
-Curso: Coderhouse - SQL
+### Curso: Coderhouse - SQL
 
-Comision: 57190
+### Comision: 57190
 
-Proyecto: Merchanmanger
+### Proyecto: Merchanmanger
 
 Detalle: Base de Datos para seguimiento de trabajos de una empresa de Merchandising
 
@@ -12,7 +12,28 @@ Los trabajos estan compuestos por un pedido, que tiene uno o más items, La base
 Registrando que usuario hace el cambio de estado en cada caso.
 Tambien debe registrar los Remitos generados para cada pedido.
 
-TABLAS:
+#### Instalación:
+## Como levantar el proyecto en CodeSpaces GitHub
+* env: Archivo con contraseñas y data secretas
+* Makefile: Abstracción de creacción del proyecto
+* docker-compose.yml: Permite generar las bases de datos en forma de contenedores
+
+#### Pasos para arrancar el proyecto
+
+* En la terminal de VisualStudio escribir :
+    - `make` _si te da un error de que no conexion al socket, volver al correr el comando `make`_
+   
+## Como Crear la DB y sus elemento y poblarla Manualmente
+
+- 1 Ejecutar: `database_structure.sql`
+- 2 Ejecutar: `.\database_objects\funciones.sql`
+- 3 Ejecutar: `.\database_objects\views.sql`
+- 4 Ejecutar: `.\database_objects\stored_procedures.sql`
+- 5 Ejecutar: `.\database_objects\triggers.sql`
+- 6 Ejecutar: `carga_datos-por-script`
+- 7 Abrir una consola y ejecutar:
+
+#### TABLAS:
 - remito: Registra los datos generales del remito.
 - item_remito: Registra los items remitidos y su cantidad.
 - cliente: Datos completos de los clientes.
@@ -27,14 +48,14 @@ TABLAS:
 - movimiento_pedido: Tabla de hechos, que registra los movimientos en el estado de los pedidos y que usuario los realizó.
 - movimiento_item: tabla de hechos, que registra los movimientos en el estado de los items y que usuario los realizó.
 
-VISTAS:
+#### VISTAS:
 - view_entregas_pedidos: Se ordenan las entregas con su numero de Remito, ordenadas por numero de pedido.
 - view_items_por_proveedor: Muestra los pedidos asignados a cada proveedor, con el costo del mismo, expresado en pesos al tipo de cambio utilizado en el pedido, ordenados por proveedor. Sirve para poder hacerle seguimiento a los proveedores de forma simple.
 - view_pedidos_activos: Lista los pedidos activos, ordenados por el estado de avance de cada uno. Pensado para poder hacer el seguimiento general de los pedidos y su parte administrativa.
 - view_pedidos_pesos: Describe los pedidos con su importe en Pesos al tipo de cambio acordado. Fue principalmente una prueba para examinar el funcionamiento de las funciones aprendidas. El precio unitario se calcula con una función que devuelve un DECIMAL(10,2) y el importe total con una función que devuelve un String con el formato de pesos ya aplicado.
 - view_remitos_cliente: Muestra las entregas realizadas de cada pedido, con el cliente, y la descripcion el producto y la cantidad.
 
-FUNCIONES:
+#### FUNCIONES:
 - pedidos_pesos:
     Parametros [ tipo_cambio DECIMAL(10,2), cantidad INT, precio_unitario DECIMAL(10,2) ]
     Realiza el calculo del precio total en base a los parametros y lo devuelve en forma de String con el formato de pesos en un [ VARCHAR(50) ].
@@ -45,14 +66,16 @@ FUNCIONES:
     Parametros [ pedido INT,  precio_en_dolares DECIMAL(10,2) ]
     En base a los parametros ingresados, devuelve en forma de numero [ DECIMAL(14,2) ] el precio expresado en pesos. Lo bueno de esta función es que me sirve, tanto para calcular el precio de venta del PEDIDO, como los costos calculados de los ITEMS. 
 
-STORED PROCEDURES:
+#### STORED PROCEDURES:
 - consulta_pedido_por_estado:
     Parametros: [ VARCHAR(50) ] Inicio del texto de un estado de pedido.
     Devuelve una lista de los pedidos en ese estado, utiliza la función 'devuelve_id_estado_pedido' para convertir a id_pedido el texto ingresado.
-Ej:
+Ej:  
+```
 CALL consulta_pedido_por_estado("Arch");
+```
 
-TRIGGERS:
+#### TRIGGERS:
 - tr_add_movimiento_pedido:
   Controla la tabla 'movimiento_pedido' y cuando se inserta un movimiento, verifica que el nuevo id_estado_pedido exista y en ese caso modifica el estado del pedido en la tabla 'pedido' y agrega el registro, para tener control de los cambios de estado.
 
