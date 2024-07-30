@@ -1,5 +1,5 @@
 -- mysql -u root -p --local-infile=1
--- source init.sql
+-- source carga-datos-por-csv.sql
 
 SET GLOBAL local_infile = true;
 
