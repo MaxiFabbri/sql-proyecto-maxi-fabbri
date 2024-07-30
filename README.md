@@ -33,7 +33,7 @@ Tambien debe registrar los Remitos generados para cada pedido.
 - 6 Ejecutar: `carga_datos-por-script`
 - 7 Abrir una consola en `.\sql_project\`
 - 8 Ejecutar: `mysql -u root -p --local-infile=1`
-- 9 Ejecutar: `source init.sql`
+- 9 Ejecutar: `source carga-datos-por-csv.sql`
 
 #### TABLAS:
 - remito: Registra los datos generales del remito.
