@@ -88,7 +88,7 @@ CALL consulta_pedido_por_estado("Arch");
 - Socios:
   Es el usuario pensado para los Socios=Gerentes (Administradores en una SRL de Argentina), tiene todos los privilegios.
 - Admin:
-  Es el usuario pensado para los empleados administrativos de la empresa, tiene los permisos para ver todas las tablas y las visatas, pero solo para insertar movimientos en los pedido y movimientos en los Items.
+  Es el usuario pensado para los empleados administrativos de la empresa, tiene los permisos para ver todas las tablas y las visatas, pero solo para insertar movimientos en los pedido y movimientos en los Items. Ademas tiene permiso para ver el Stored Procedure para ver pedidos por estado.
 - Ventas:
   Es el usuario pensado para los vendedores, que pueden ver las vistas, sabiendo la información relevante para ellos, especialmente el Stored Procedure para ver pedidos por estado.
 
