@@ -1,6 +1,6 @@
 DROP USER IF EXISTS 'socios'@'%';
 CREATE USER 'socios'@'%' IDENTIFIED BY 'socios123';
-GRANT ALL ON merchanmanager.* TO 'socios'@'%';
+GRANT ALL ON *.* TO 'socios'@'%';
 
 
 DROP USER IF EXISTS 'admin'@'%';
