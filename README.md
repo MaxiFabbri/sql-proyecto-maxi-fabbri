@@ -90,7 +90,7 @@ CALL consulta_pedido_por_estado("Arch");
 - Admin:
   Es el usuario pensado para los empleados administrativos de la empresa, tiene los permisos para ver todas las tablas y las visatas, pero solo para insertar movimientos en los pedido y movimientos en los Items.
 - Ventas:
-  Es el usuario pensado para los vendedores, que pueden ver las vistas, sabiendo la información relevante para ellos.
+  Es el usuario pensado para los vendedores, que pueden ver las vistas, sabiendo la información relevante para ellos, especialmente el Stored Procedure para ver pedidos por estado.
 
 
 
